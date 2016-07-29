@@ -1,5 +1,5 @@
 <?php
-$basePath = "/widgets/ContactForm/";
+$basePath = "/widgets/contact-form/";
 
 // Remove the directory path we don't want
 $request = str_replace($basePath, "", $_SERVER["REQUEST_URI"]);

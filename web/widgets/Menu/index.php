@@ -1,5 +1,5 @@
 <?php
-$basePath = "/widgets/Menu/";
+$basePath = "/widgets/menu/";
 ?>
 <!DOCTYPE html>
 <html>
