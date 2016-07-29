@@ -1,0 +1,185 @@
+// Blog Post
+// ============
+//
+// The content of this file holds the styles for the blog post.
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+  	margin: 0;
+	width: 100%;
+}
+
+// Import the background styles.
+@import "_background";
+
+// Import the colors.
+@import "_colors";
+
+// Import the measures.
+@import "_measures";
+
+// Import the typography's.
+@import "_typos";
+
+#wrapper {
+	text-align: center;
+	width: 100%;
+}
+
+/* Import the "top bar" styles. */
+@import "top-bar";
+
+.info-container {
+  	background-color: $post-background-color;
+  	border-radius: $post-border-radius;
+  	display: none;
+  	height: $post-height;
+  	left: 50%;
+  	margin-left: -1 * ($post-width / 2);
+  	margin-top: -1 * $post-height / 2;
+  	position: absolute;
+  	top: 50%;
+  	width: $post-width;
+}
+
+#post-picture {
+  	border-top-left-radius: $post-border-radius;
+  	border-top-right-radius: $post-border-radius;
+	float: left;
+  	height: 204px;
+  	overflow: hidden;
+  	width: 100%;
+}
+
+/* Import the styles for the circle profile pic. */
+@import "circle-profile-pic";
+
+#post-author {
+  	display: table;
+  	float: left;
+  	height: 140px;
+  	width: 100%;
+
+  	.col {
+	  	display: table-cell;
+	  	vertical-align: middle;
+	}
+
+  	#post-author-pic {
+		width: 33.33%;
+	}
+
+  	#post-author-data {
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+	  	width: calc(66.67% - 20px);
+
+	  	label {
+		  	color: $post-author-name-font-color;
+			display: block;
+		  	font-family: $open-sans-typography;
+		  	font-size: $post-author-name-font-size;
+		  	text-align: left;
+		}
+
+	  	p {
+		  	color: $post-author-comment-font-color;
+			display: block;
+		  	font-family: $open-sans-typography;
+			  	font-size: $post-author-comment-font-size;
+		  	margin: 0;
+			text-align: left;
+	  	}
+	}
+}
+
+#post-options {
+  	display: table;
+	float: left;
+  	height: 48px;
+	width: 100%;
+
+	.post-option-column {
+		background-color: $bottom-column-color;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+  	.post-option-column:nth-child(1) {
+		border-bottom-left-radius: $post-border-radius;
+	}
+
+  	.post-option-column:nth-child(3) {
+		border-bottom-right-radius: $post-border-radius;
+	}
+
+	.corner-option-column {
+		width: 33%;
+	}
+
+	.central-option-column {
+	  	border-color: #ffffff;
+	  	border-top-width: 0;
+	  	border-bottom-width: 0;
+	  	border-left-width: 1px;
+	  	border-right-width: 1px;
+	  	border-style: solid;
+		width: calc(34% - 2px);
+	}
+}
+
+.bottom-anchor {
+  	color: $bottom-icons-font-color-normal;
+  	display: inline-table;
+
+  	i {
+	  	cursor: pointer;
+		display: table-cell;
+		font-size: 1.5em;
+	  	padding-right: 10px;
+		vertical-align: middle;
+  	}
+
+	label {
+	  cursor: pointer;
+	  display: table-cell;
+	  font-family: $bottom-icons-font-family;
+	  font-size: $bottom-icons-font-size;
+	  vertical-align: middle;
+	}
+}
+
+.bottom-anchor:hover {
+  	color: $bottom-icons-font-color-over;
+}
+
+.bottom-anchor.active {
+  	color: $bottom-icons-font-color-active;
+	font-weight: bold;
+}
+
+.unselectable-text {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+#post-not-found {
+  	font-family: $bottom-icons-font-family;
+  	height: $post-height - $padding-top-post-not-found;
+  	padding-top: $padding-top-post-not-found;
+  	text-align: center;
+
+	.fa {
+	  	font-size: 10em;
+	}
+}

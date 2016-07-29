@@ -1,0 +1,14 @@
+{
+  "blog-post": {
+	"english-website": "Inglés",
+	"spanish-website": "Español",
+
+    "follow": "Seguir",
+    "unfollow": "Dejar de seguir",
+    "comment": "Comentar",
+    "like": "Me gusta",
+    "unlike": "Ya no me gusta",
+
+    "post-not-found": ":( La publicación indicada no pudo ser cargada."
+  }
+}

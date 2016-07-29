@@ -1,0 +1,173 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%; }
+
+body {
+  background-attachment: fixed;
+  background-color: #d4b48e;
+  background-image: url("../assets/images/background-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../assets/images/background-image-for-mobile.jpg"); } }
+#wrapper {
+  text-align: center;
+  width: 100%; }
+
+/* Import the "top bar" styles. */
+#top-bar {
+  background-color: #ededed;
+  float: left;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%; }
+#top-bar .langs {
+  margin: 0;
+  padding: 0; }
+#top-bar .langs-item {
+  display: inline;
+  list-style: none; }
+#top-bar .langs-link {
+  color: #636363;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  text-decoration: none; }
+
+.info-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: none;
+  height: 392px;
+  left: 50%;
+  margin-left: -185px;
+  margin-top: -196px;
+  position: absolute;
+  top: 50%;
+  width: 370px; }
+
+#post-picture {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  float: left;
+  height: 204px;
+  overflow: hidden;
+  width: 100%; }
+
+/* Import the styles for the circle profile pic. */
+.circle {
+  -moz-border-radius: 99em;
+  -webkit-border-radius: 99em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 90px;
+  margin: 1em auto;
+  width: 90px; }
+
+#post-author {
+  display: table;
+  float: left;
+  height: 140px;
+  width: 100%; }
+#post-author .col {
+  display: table-cell;
+  vertical-align: middle; }
+#post-author #post-author-pic {
+  width: 33.33%; }
+#post-author #post-author-data {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: calc(66.67% - 20px); }
+#post-author #post-author-data label {
+  color: #5c5146;
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  text-align: left; }
+#post-author #post-author-data p {
+  color: #8e8071;
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  margin: 0;
+  text-align: left; }
+
+#post-options {
+  display: table;
+  float: left;
+  height: 48px;
+  width: 100%; }
+#post-options .post-option-column {
+  background-color: #f6f1ed;
+  display: table-cell;
+  vertical-align: middle; }
+#post-options .post-option-column:nth-child(1) {
+  border-bottom-left-radius: 5px; }
+#post-options .post-option-column:nth-child(3) {
+  border-bottom-right-radius: 5px; }
+#post-options .corner-option-column {
+  width: 33%; }
+#post-options .central-option-column {
+  border-color: #ffffff;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  width: calc(34% - 2px); }
+
+.bottom-anchor {
+  color: #b1a599;
+  display: inline-table; }
+.bottom-anchor i {
+  cursor: pointer;
+  display: table-cell;
+  font-size: 1.5em;
+  padding-right: 10px;
+  vertical-align: middle; }
+.bottom-anchor label {
+  cursor: pointer;
+  display: table-cell;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  vertical-align: middle; }
+
+.bottom-anchor:hover {
+  color: #928f8c; }
+
+.bottom-anchor.active {
+  color: #e86741;
+  font-weight: bold; }
+
+.unselectable-text {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none; }
+
+#post-not-found {
+  font-family: "PT Sans", sans-serif;
+  height: 300px;
+  padding-top: 92px;
+  text-align: center; }
+#post-not-found .fa {
+  font-size: 10em; }
+
+/*# sourceMappingURL=index.css.map */

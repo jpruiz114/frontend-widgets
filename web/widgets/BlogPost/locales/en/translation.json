@@ -1,0 +1,14 @@
+{
+  "blog-post": {
+    "english-website": "English",
+    "spanish-website": "Spanish",
+
+    "follow": "Follow",
+    "unfollow": "Unollow",
+    "comment": "Comment",
+    "like": "Like",
+    "unlike": "Unlike",
+
+    "post-not-found": ":( The requested post could not be found."
+  }
+}
