@@ -1,5 +1,5 @@
 <?php
-$basePath = "/frontend-test/BlogPost/";
+$basePath = "/widgets/BlogPost/";
 
 // Remove the directory path we don't want
 $request = str_replace($basePath, "", $_SERVER["REQUEST_URI"]);
