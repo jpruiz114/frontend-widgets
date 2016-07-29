@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%; }
+
+body {
+  background-attachment: fixed;
+  background-color: #d4b48e;
+  background-image: url("../assets/images/background-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../assets/images/background-image-for-mobile.jpg"); } }
+#wrapper {
+  text-align: center;
+  width: 100%; }
+
+/* Import the "top bar" styles. */
+#top-bar {
+  background-color: #ededed;
+  float: left;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%; }
+#top-bar .langs {
+  margin: 0;
+  padding: 0; }
+#top-bar .langs-item {
+  display: inline;
+  list-style: none; }
+#top-bar .langs-link {
+  color: #636363;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  text-decoration: none; }
+
+#form-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: none;
+  height: calc(460px - 30px);
+  left: 50%;
+  margin-left: -185px;
+  margin-top: -245px;
+  padding-top: 30px;
+  position: absolute;
+  top: 50%;
+  width: 370px; }
+
+.full-size-row {
+  float: left;
+  margin-bottom: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  width: calc(100% - (30px + 30px)); }
+.full-size-row label {
+  color: #8e8071;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  margin-bottom: 0; }
+.full-size-row input[type=text] {
+  border-color: #e5d4c2;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #897765;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 15px;
+  width: calc(100% - (15px * 2 + 1px * 2)); }
+.full-size-row textarea {
+  border-color: #e5d4c2;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #897765;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  height: calc(106px - (15px * 2 + 1px * 2));
+  padding: 15px;
+  width: calc(100% - (15px * 2 + 1px * 2)); }
+
+.full-size-row:nth-child(even) {
+  margin-bottom: 15px; }
+
+.tags-holder {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #e5d4c2;
+  padding: 5px; }
+.tags-holder .email-tags {
+  float: left;
+  width: 88%; }
+.tags-holder .email-tags .tokenizer {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 98% !important; }
+.tags-holder .email-tags .tokenizer span {
+  padding: 12px; }
+.tags-holder .email-tags .tokenizer ul li:nth-child(odd) span.label {
+  background-color: #5e90af; }
+.tags-holder .email-tags .tokenizer ul li:nth-child(even) span.label {
+  background-color: #4daf7b; }
+.tags-holder .add-another {
+  color: #ede3dd;
+  cursor: pointer;
+  font-size: 40px; }
+
+.bottom-form-row {
+  background-color: #f8f3f0;
+  border-radius: 0 0 5px 5px;
+  /* top left, top right, bottom right, bottom left */
+  display: table;
+  float: left;
+  height: 88px;
+  width: 100%;
+  /* This is a fix to align the checkbox with its label */ }
+.bottom-form-row .half-row {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%; }
+.bottom-form-row label {
+  color: #8e8071;
+  display: inline;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px; }
+.bottom-form-row .icheckbox_minimal-green {
+  margin-right: 4px;
+  margin-top: -4px; }
+
+/* Override to remove the toastr alerts opacity */
+.toast {
+  opacity: 1 !important; }
+
+/*# sourceMappingURL=index.css.map */

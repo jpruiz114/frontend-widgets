@@ -1,0 +1,165 @@
+// Profile
+// ============
+//
+// The content of this file holds the styles for the profile.
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+// Import the background styles.
+@import "_background";
+
+// Import the colors.
+@import "_colors";
+
+// Import the measures.
+@import "_measures";
+
+// Import the typography's.
+@import "_typos";
+
+#wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+/* Import the "top bar" styles. */
+@import "top-bar";
+
+.info-container {
+    background-color: $profile-background-color;
+    border-radius: $post-border-radius;
+    display: none;
+    height: $post-height;
+    left: 50%;
+    margin-left: -1 * ($post-width / 2);
+    margin-top: -1 * $post-height / 2;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: $post-width;
+}
+
+/* Import the styles for the circle profile pic. */
+@import "circle-profile-pic";
+
+#profile-header {
+    background-color: $profile-header-background-color;
+    display: table;
+    float: left;
+    height: 125px;
+    width: 100%;
+
+    .col {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #profile-pic-container {
+        width: 45%;
+    }
+
+    #profile-data {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc(55% - 20px);
+
+        p {
+            color: $profile-name-font-color;
+            display: block;
+			font-family: $profile-name-font-family;
+			font-size: $profile-name-font-size;
+            font-weight: bold;
+			margin: 0;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        label {
+            color: $profile-followers-font-color;
+            font-family: $profile-followers-font-family;
+            font-size: $profile-followers-font-size;
+            text-align: left;
+            text-transform: lowercase;
+        }
+    }
+}
+
+#profile-options {
+    display: table;
+    float: left;
+    width: 100%;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li a {
+        color: $profile-option-font-color;
+        border-left-color: $profile-option-border-left-color;
+        border-left-style: solid;
+        border-left-width: $profile-option-border-left-width;
+        display: table;
+        font-family: $profile-option-font-family;
+        font-size: $profile-option-font-size;
+        padding-bottom: $list-option-padding-bottom;
+        padding-left: $list-option-padding-left;
+        padding-right: $list-option-padding-right;
+        padding-top: $list-option-padding-top;
+        text-align: left;
+        text-decoration: none;
+        width: calc(100% - (#{$list-option-padding-left} + #{$list-option-padding-right} + #{$profile-option-border-left-width}));
+    }
+
+    li a:hover {
+        background-color: $profile-option-hover-color;
+        border-left-color: $profile-option-border-left-hover-color;
+
+        .fa {
+            color: $icon-hover-color;
+        }
+    }
+
+    label {
+        cursor: pointer;
+        display: table-cell;
+        width: 90%;
+    }
+
+    .fa {
+        display: table-cell;
+        text-align: center;
+        width: 10%;
+    }
+}
+
+.unselectable-text {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+#profile-not-found {
+    font-family: $open-sans-typography;
+    height: $post-height - $padding-top-profile-not-found;
+    padding-top: $padding-top-profile-not-found;
+    text-align: center;
+
+    .fa {
+        font-size: 10em;
+    }
+}

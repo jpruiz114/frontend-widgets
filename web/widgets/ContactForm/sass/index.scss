@@ -1,0 +1,169 @@
+// Contact Form
+// ============
+//
+// The content of this file holds the styles for the contact form.
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  	height: 100%;
+  	margin: 0;
+	width: 100%;
+}
+
+// Import the background styles.
+@import "_background";
+
+// Import the colors.
+@import "_colors";
+
+// Import the measures.
+@import "_measures";
+
+// Import the typography's.
+@import "_typos";
+
+#wrapper {
+	text-align: center;
+	width: 100%;
+}
+
+/* Import the "top bar" styles. */
+@import "top-bar";
+
+#form-container {
+	background-color: $form-background-color;
+	border-radius: $form-border-radius;
+  	display: none;
+	height: calc(#{$form-height} - #{$form-container-top-padding});
+	left: 50%;
+	margin-left: -1 * ($form-width / 2);
+	margin-top: -1 * ($form-height + $form-container-top-padding) / 2;
+	padding-top: $form-container-top-padding;
+	position: absolute;
+	top: 50%;
+	width: $form-width;
+}
+
+.full-size-row {
+	float: left;
+  	margin-bottom: $full-size-row-bottom-margin;
+  	padding-left: $full-size-row-left-padding;
+	padding-right: $full-size-row-right-padding;
+	text-align: left;
+	width: calc(100% - (#{$full-size-row-left-padding} + #{$full-size-row-right-padding}));
+
+	label {
+		color: $label-color;
+		font-family: $open-sans-typography;
+		font-size: 16px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+	  	margin-bottom: 0;
+	}
+
+  	input[type=text] {
+	  	border-color: $input-border-color;
+	  	border-radius: $input-border-radius;
+	  	border-style: solid;
+	  	border-width: $input-border-width;
+	  	color: $input-text-color;
+	  	font-family: $open-sans-typography;
+	  	font-size: 14px;
+	  	margin: 0;
+	  	padding: $input-padding;
+	  	width: calc(100% - (#{$input-padding} * 2 + #{$input-border-width} * 2));
+  	}
+
+  	textarea {
+	  	border-color: $input-border-color;
+	  	border-radius: $input-border-radius;
+	  	border-style: solid;
+	  	border-width: $input-border-width;
+	  	color: $input-text-color;
+	  	font-family: $open-sans-typography;
+	  	font-size: 14px;
+	  	height: calc(#{$text-area-height} - (#{$input-padding} * 2 + #{$input-border-width} * 2));
+	  	padding: $input-padding;
+	  	width: calc(100% - (#{$input-padding} * 2 + #{$input-border-width} * 2));
+	}
+}
+
+.full-size-row:nth-child(even) {
+  	margin-bottom: $full-size-row-bottom-margin-larger;
+}
+
+.tags-holder {
+  	border-style: solid;
+  	border-width: $input-border-width;
+  	border-radius: $input-border-radius;
+  	border-color: $input-border-color;
+  	padding: $tag-holder-padding;
+
+  	.email-tags {
+	  	float: left;
+	  	width: 88%;
+
+	  	.tokenizer {
+			border: none;
+			margin: 0;
+			padding: 0;
+			width: 98% !important;
+	  	}
+
+	  	.tokenizer span {
+			padding: 12px;
+		}
+
+	  	.tokenizer ul li:nth-child(odd) span.label {
+			background-color: #5e90af
+		}
+
+	  	.tokenizer ul li:nth-child(even) span.label {
+		  	background-color: #4daf7b
+	  	}
+	}
+
+	.add-another {
+		color: #ede3dd;
+	  	cursor: pointer;
+		font-size: 40px;
+	}
+}
+
+.bottom-form-row {
+  	background-color: $submit-container-background-color;
+  	border-radius: 0 0 $form-border-radius $form-border-radius; /* top left, top right, bottom right, bottom left */
+  	display: table;
+  	float: left;
+  	height: $bottom-form-row;
+  	width: 100%;
+
+  	.half-row {
+	  	display: table-cell;
+	  	vertical-align: middle;
+		width: 50%;
+  	}
+
+  	label {
+	  	color: $bottom-check-label-font-color;
+	  	display: inline;
+	  	font-family: $open-sans-typography;
+	  	font-size: $bottom-check-label-font-size;
+	}
+
+  	/* This is a fix to align the checkbox with its label */
+  	.icheckbox_minimal-green {
+	  	margin-right: 4px;
+	  	margin-top: -4px;
+	}
+}
+
+/* Override to remove the toastr alerts opacity */
+.toast {
+	opacity: 1 !important;
+}

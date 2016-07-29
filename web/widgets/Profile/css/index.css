@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%; }
+
+body {
+  background-attachment: fixed;
+  background-color: #d4b48e;
+  background-image: url("../assets/images/background-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../assets/images/background-image-for-mobile.jpg"); } }
+#wrapper {
+  text-align: center;
+  width: 100%; }
+
+/* Import the "top bar" styles. */
+#top-bar {
+  background-color: #ededed;
+  float: left;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%; }
+#top-bar .langs {
+  margin: 0;
+  padding: 0; }
+#top-bar .langs-item {
+  display: inline;
+  list-style: none; }
+#top-bar .langs-link {
+  color: #636363;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  text-decoration: none; }
+
+.info-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: none;
+  height: 310px;
+  left: 50%;
+  margin-left: -140px;
+  margin-top: -155px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 280px; }
+
+/* Import the styles for the circle profile pic. */
+.circle {
+  -moz-border-radius: 99em;
+  -webkit-border-radius: 99em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 90px;
+  margin: 1em auto;
+  width: 90px; }
+
+#profile-header {
+  background-color: #b1a599;
+  display: table;
+  float: left;
+  height: 125px;
+  width: 100%; }
+#profile-header .col {
+  display: table-cell;
+  vertical-align: middle; }
+#profile-header #profile-pic-container {
+  width: 45%; }
+#profile-header #profile-data {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: calc(55% - 20px); }
+#profile-header #profile-data p {
+  color: #ffffff;
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase; }
+#profile-header #profile-data label {
+  color: #3a2f24;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  text-transform: lowercase; }
+
+#profile-options {
+  display: table;
+  float: left;
+  width: 100%; }
+#profile-options ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+#profile-options li a {
+  color: #8e8071;
+  border-left-color: #ffffff;
+  border-left-style: solid;
+  border-left-width: 3px;
+  display: table;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 16px;
+  padding-top: 12px;
+  text-align: left;
+  text-decoration: none;
+  width: calc(100% - (20px + 16px + 3px)); }
+#profile-options li a:hover {
+  background-color: #f8f3f0;
+  border-left-color: #4daf7b; }
+#profile-options li a:hover .fa {
+  color: #e55f3b; }
+#profile-options label {
+  cursor: pointer;
+  display: table-cell;
+  width: 90%; }
+#profile-options .fa {
+  display: table-cell;
+  text-align: center;
+  width: 10%; }
+
+.unselectable-text {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none; }
+
+#profile-not-found {
+  font-family: "PT Sans", sans-serif;
+  height: 270px;
+  padding-top: 40px;
+  text-align: center; }
+#profile-not-found .fa {
+  font-size: 10em; }
+
+/*# sourceMappingURL=index.css.map */

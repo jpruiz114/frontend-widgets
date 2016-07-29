@@ -1,0 +1,25 @@
+{
+  "contact-form": {
+	"english-website": "English",
+	"spanish-website": "Spanish",
+
+	"contacts": "Contacts",
+	"subject": "Subject",
+	"message": "Message",
+
+	"add-subject": "You can add a subject",
+	"leave-message": "Leave your message here",
+
+	"save-copy": "Save a copy",
+	"send-mail": "Send Mail",
+
+	"contacts-error-1": "Couldn't get the list of contacts",
+	"contacts-error-2": "There has to be at least one contact",
+	"contacts-error-3": " is not a valid email address.",
+	"subject-error-1": "You must indicate your subject.",
+	"message-error-1": "You must indicate your message.",
+
+	"contact-success": "Your message was sent",
+	"contact-error": "Your message couldn't be sent"
+  }
+}
